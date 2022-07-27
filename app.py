@@ -1,10 +1,10 @@
 import streamlit as st
 from calc import monthly_compounding
 
-initial = float(input("Input initial amount: "))
-apr = float(input("Input APR: "))
-monthly = float(input("Input monthly deposits: "))
-years = int(input("Input number of years you will invest for: "))
+initial = float(input("How much money are you starting with: "))
+apr = float(input("What interest will you compound annually: "))
+monthly = float(input("How much will you deposit monthly: "))
+years = int(input("How many years will you be invested for: "))
 
 final_sum = monthly_compounding(initial, apr, monthly, years)
 
